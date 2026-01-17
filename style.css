@@ -908,7 +908,9 @@ footer .copyright .pro-links i:hover{
         font-size: 26px;
         color: white;
         padding: 30px 0 20px 40px;
+        cursor: pointer;
     }
+    
 
     nav .navigation ul {
         position: fixed;
