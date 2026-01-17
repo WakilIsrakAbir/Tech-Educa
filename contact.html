@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Educa Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/218d7c0b86.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navication -->
+    <nav  class="section-p1">
+        <img src="Images/logo.svg" alt="Logo">
+        <div class="navigation">
+            <ul>
+                 <i id="menu-close" class="fa-solid fa-x"></i>   <!-- menu close X-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="/Images/menu.png" alt="menu">  <!-- menu button-->
+        </div>
+    </nav>
+
+    <!-- Courses Home -->
+    <section id="about-home" class="section-p1">
+        <h2>Contact Us/</h2>
+    </section>
+
+
+    <!--  Contact -->
+    <section id="contact" class="section-p1">
+      <div class="getin">
+        <h2>Get in Touch</h2>
+        <p>Looking For Help?Fill The Form and start a new adventure</p>
+        <div class="getin-details">
+            <h3>Headquaters</h3>
+            <div>
+              <i class="fa-solid fa-house get"></i>
+              <p>315/5 east NakhalPara,Tejgaon, Dhaka</p>  
+            </div>
+            <h3>Phone Number</h3>
+            <div>
+              <i class="fa-solid fa-phone get"></i>
+              <p>+880 1849 846805 <br> +880 1767 565428</p>  
+            </div>
+            <h3>Support</h3>
+            <div>
+              <i class="fa-solid fa-message get"></i>
+              <p>wakilisrakabir@gmail.com <br> 2022000000037@seu.edu.bd</p>  
+            </div>
+            <h3>Follow Us</h3>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <h4>Let's Contact</h4>
+        <p>Integer at Lorem eget diam facilisis lacinia ac id massa.</p>
+        <div class="form-row">
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Your Email">
+        </div>
+        <div class="form-col">
+            <input type="text" placeholder="Subject">
+        </div>
+        <div class="form-col">
+            <textarea name="" id="" cols="30" rows="8" placeholder="How can we help?"></textarea>
+        </div>
+        <div class="bbb normal">
+            <a href="#">Send Message</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+     <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.4248523167334!2d90.40345609667843!3d23.769396065895325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70e4508a1f7%3A0x4e6fd719b838721!2sSoutheast%20University!5e1!3m2!1sen!2sbd!4v1766660803565!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section>
+
+
+    <!-- Footer -->
+     <footer class="section-p1">
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can Trust Us.We only send promo offers!</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a class="normal" href="#">SUBSCRIBE</a>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>Copyright ©2025 All rights reserved | This Template is made by Wakil Israk Abir</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+
+     </footer>
+
+
+     <!-- Script for menu Ber -->
+     <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menuClose = document.getElementById("menu-close");
+        const navLinks = document.querySelector("nav .navigation ul");
+
+        menuBtn.addEventListener("click", () => {
+           navLinks.classList.add("active");
+        });
+
+        menuClose.addEventListener("click", () => {
+           navLinks.classList.remove("active");
+        });
+
+     </script>
+
+
+</body>
+</html>

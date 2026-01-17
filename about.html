@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Educa Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/218d7c0b86.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navication -->
+    <nav  class="section-p1">
+        <img src="Images/logo.svg" alt="Logo">
+        <div class="navigation">
+            <ul>
+                 <i id="menu-close" class="fa-solid fa-x"></i>   <!-- menu close X-->
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="/Images/menu.png" alt="menu">  <!-- menu button-->
+        </div>
+    </nav>
+
+    <!-- About Home -->
+    <section id="about-home" class="section-p1">
+        <h2>About TechEduca/</h2>
+    </section>
+
+    <!-- About-Container -->
+     <section id="about-container" class="section-p1">
+        <div class="about-image">
+            <img src="/Images/a.png" alt="about picture">
+        </div>
+
+        <div class="about-text">
+            <h2>Welcome to TechEduca,Inhance your skills with best Online Courses</h2>
+            <p>You can start and finish one of these popular courses in under a day - for free!
+                Check out the list bellow.. Take the course for free.
+            </p>
+            <div class="about-fe">
+                <img src="/Images/fe1.png" alt="feature 1">
+                <div class="fe-text">
+                    <h5>400+ Courses</h5>
+                    <p>You can start and finish one of these popular courses in under our site</p>
+                    
+                </div>
+            </div>
+
+            <div class="about-fe">
+                <img src="/Images/fe2.png" alt="feature 1">
+                <div class="fe-text">
+                    <h5>400+ Courses</h5>
+                    <p>You can start and finish one of these popular courses in under our site</p>
+
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- Feature -->
+    <section id="features" class="section-p1">
+        <h1>Awesome Feature</h1>
+        <p>Replenish man Have thing gethering lights yielding shall you!</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Scholarship facility</h3>
+                <p>One Make creepth,man bearing theira firmament won't great heaven</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-book"></i>
+                <h3>Sell Online Course</h3>
+                <p>One Make creepth,man bearing theira firmament won't great heaven</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-certificate"></i>
+                <h3>Global certification</h3>
+                <p>One Make creepth,man bearing theira firmament won't great heaven</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust -->
+     <section id="trust" class="section-p1">
+        <h1>Trusted By</h1>
+        <p>Lsum dolor sit amet consectetur adipisicing elit. Voluptatum, necessitatibus!</p>
+        <div class="trust-img">
+            <img src="/Images/trust (1).png" alt="pic">
+            <img src="/Images/trust (2).png" alt="pic">
+            <img src="/Images/trust (3).png" alt="pic">
+            <img src="/Images/trust (4).png" alt="pic">
+            <img src="/Images/trust (5).png" alt="pic">
+            <img src="/Images/trust (6).png" alt="pic">
+        </div>
+     </section>
+
+    <!-- Footer -->
+     <footer class="section-p1">
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can Trust Us.We only send promo offers!</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a class="normal" href="#">SUBSCRIBE</a>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>Copyright ©2025 All rights reserved | This Template is made by Wakil Israk Abir</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+
+     </footer>
+
+
+     <!-- Script for menu Ber -->
+     <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menuClose = document.getElementById("menu-close");
+        const navLinks = document.querySelector("nav .navigation ul");
+
+        menuBtn.addEventListener("click", () => {
+           navLinks.classList.add("active");
+        });
+
+        menuClose.addEventListener("click", () => {
+           navLinks.classList.remove("active");
+        });
+
+     </script>
+
+
+</body>
+</html>

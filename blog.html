@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Educa Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/218d7c0b86.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navication -->
+    <nav  class="section-p1">
+        <img src="Images/logo.svg" alt="Logo">
+        <div class="navigation">
+            <ul>
+                 <i id="menu-close" class="fa-solid fa-x"></i>   <!-- menu close X-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active"  href="blog.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="/Images/menu.png" alt="menu">  <!-- menu button-->
+        </div>
+    </nav>
+
+    <!-- About Blog -->
+    <section id="about-home" class="section-p1">
+        <h2>Blog/</h2>
+    </section>
+
+
+    <!-- Blog Container -->
+    <section id="blog-container" class="section-p1">
+        <div class="blogs">
+            <div class="post">
+                <img src="/Images/b1.jpg" alt="blog-image">
+                <h3>Learn Web development In The Easieast Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, 
+                quo neque tempore voluptate itaque assumenda iste 
+                exercitationem quaerat consequatur, dolore eveniet 
+                veniam, voluptas eius laborum natus repellat fuga fugit 
+                illum!</p>
+                <a class="normal" href="post.html">Read More</a>
+            </div>
+            <div class="post">
+                <img src="/Images/b2.jpg" alt="blog-image">
+                <h3>Learn Web development In The Easieast Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, 
+                quo neque tempore voluptate itaque assumenda iste 
+                exercitationem quaerat consequatur, dolore eveniet 
+                veniam, voluptas eius laborum natus repellat fuga fugit 
+                illum!</p>
+                <a class="normal" href="post.html">Read More</a>
+            </div>
+            <div class="post">
+                <img src="/Images/b3.jpg" alt="blog-image">
+                <h3>Learn Web development In The Easieast Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, 
+                quo neque tempore voluptate itaque assumenda iste 
+                exercitationem quaerat consequatur, dolore eveniet 
+                veniam, voluptas eius laborum natus repellat fuga fugit 
+                illum!</p>
+                <a class="normal" href="#">Read More</a>
+            </div>
+            <div class="post">
+                <img src="/Images/b4.png" alt="blog-image">
+                <h3>Learn Web development In The Easieast Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, 
+                quo neque tempore voluptate itaque assumenda iste 
+                exercitationem quaerat consequatur, dolore eveniet 
+                veniam, voluptas eius laborum natus repellat fuga fugit 
+                illum!</p>
+                <a class="normal" href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="cate">
+            <h2>Categories</h2>
+            <hr>
+            <a href="#">Web Development</a>
+            <hr>
+            <a href="#">Web Desingn</a>
+            <hr>
+            <a href="#">App Development</a>
+            <hr>
+            <a href="#">Frontent Web</a>
+            <hr>
+            <a href="#">Python Programming</a>
+            <hr>
+            <a href="#">JavaScript Hack</a>
+            <hr>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="section-p1">
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can Trust Us.We only send promo offers!</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a class="normal" href="#">SUBSCRIBE</a>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>Copyright ©2025 All rights reserved | This Template is made by Wakil Israk Abir</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Script for menu Ber -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menuClose = document.getElementById("menu-close");
+        const navLinks = document.querySelector("nav .navigation ul");
+
+        menuBtn.addEventListener("click", () => {
+           navLinks.classList.add("active");
+        });
+
+        menuClose.addEventListener("click", () => {
+           navLinks.classList.remove("active");
+        });
+
+    </script>
+
+
+</body>
+</html>
